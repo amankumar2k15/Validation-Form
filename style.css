@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif}
+
+.form_container{
+    background-color: rgb(240, 240, 240);
+    width: 360px;
+    height: 260px;
+    box-shadow: 0 0 1rem  ;
+    margin: auto;
+    margin-top: 13rem;
+}
+.form_container h2{
+    font-family: 'Courgette', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form_container #error{
+    color: red;
+    text-align: center;
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.form_group .form{
+    margin-bottom: 0.3rem;
+    margin-right: 1rem;
+}
+
+input[type = text], input[type = password] {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid lightslategray;
+    border-radius: 0.8rem;
+}
+
+input[type = text]:focus , input[type = password]:focus {
+  outline: none;
+}
+
+input[type = submit] {
+    color: white;
+    background-color: darkblue;
+    padding: 8px;
+    width: 95%;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    height: 2.2rem;
+    margin-top: 1rem;
+}
+
+.form{
+    position: relative;
+}
+
+ .form .fa{
+    position: absolute;
+   top: 50%;
+   right: 3%;
+   display: none;
+}
+
+.form .fa-times{
+    color: red;
+}
+.form .fa-check{
+    color: green;
+}
