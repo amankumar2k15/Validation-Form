@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Montserrat:wght@500&family=Oswald:wght@300&family=PT+Serif+Caption&family=PT+Serif:ital@0;1&family=Spectral:wght@800&display=swap');
 
 *{
     margin: 0;
@@ -7,22 +7,31 @@
 }
 
 body{
-    font-family: 'Ubuntu', sans-serif}
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    background: url(img/loginImage.jpg) no-repeat center center/cover ;
+ }
 
 .form_container{
-    background-color: rgb(240, 240, 240);
-    width: 360px;
-    height: 260px;
-    box-shadow: 0 0 1rem  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background: white;
+    width: 387px;
+    background: linear-gradient(45deg, black, transparent);
+    box-shadow: 0 0 1rem black;
     margin: auto;
-    margin-top: 13rem;
+    padding: 44px 0px;
+
 }
 .form_container h2{
-    font-family: 'Courgette', cursive;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .form_container #error{
@@ -33,15 +42,12 @@ body{
 .form_group{
     display: flex;
     flex-direction: column;
-    margin-left: 0.5rem;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
-.form_group .form{
-    margin-bottom: 0.3rem;
-    margin-right: 1rem;
-}
+
 
 input[type = text], input[type = password] {
     padding: 8px;
@@ -55,19 +61,24 @@ input[type = text]:focus , input[type = password]:focus {
 }
 
 input[type = submit] {
-    color: white;
-    background-color: darkblue;
-    padding: 8px;
-    width: 95%;
+    color: brown;
+    background-color: black;
+    padding: 8px 103px;
     border: none;
+    font-size: 1.2rem;
     border-radius: 0.8rem;
     cursor: pointer;
-    height: 2.2rem;
-    margin-top: 1rem;
+    transition: 0.5s all ease-in-out;
+}
+input[type = submit]:hover {
+    color: rgb(0, 0, 0);
+    background-color: brown;
+  
 }
 
 .form{
     position: relative;
+    color: white;
 }
 
  .form .fa{
