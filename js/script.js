@@ -47,4 +47,14 @@ function validate(){
     }else{
         alert('Successfully Logged in')
     } 
-}
+}   
+
+
+
+
+// jQuery Ripple Effect 
+$('body').ripples({
+    resolution: 512,
+    dropRadius: 20,
+    perturbance: 0.04,
+  });
